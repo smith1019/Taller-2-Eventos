@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+  #cargando {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ddd;
+    border-top: 8px solid #04AA6D;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+  }
+
+  @keyframes girar {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
+</head>
+<body>
+
+
+<div id="cargando">
+  <div class="spinner"></div>
+</div>
+
+
+
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+</header>
+
+
+
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+  <img src="https://www.w3schools.com/w3images/ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
+  <img src="https://www.w3schools.com/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="https://www.w3schools.com/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+</div>
+
+
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      document.getElementById("cargando").style.display = "none";
+    }, 3000);
+  });
+</script>
+
+
+</body>
+</html>

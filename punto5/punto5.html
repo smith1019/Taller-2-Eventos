@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accordiones</title>
+</head>
+<body>
+
+Checkbox: <input type="checkbox" id="myCheck">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+
+<script>
+  const checkbox = document.getElementById("myCheck");
+  const texto = document.getElementById("text");
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      texto.style.display = "block";
+    } else {
+      texto.style.display = "none";
+    }
+  });
+</script>
+
+
+</body>
+</html>
